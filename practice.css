@@ -1,0 +1,148 @@
+body {
+    display:grid;
+    grid-template-rows: 1fr 50px 600px 600px 100px;
+    grid-template-columns: auto;
+    margin:0 0;
+    
+}
+.oneheader {
+    grid-row: 1 / 2;
+    grid-column: 1;
+    position: relative;
+    background-color:rgb(146, 197, 211); 
+
+}
+
+.midasi {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size: 100px;
+    background-color:blanchedalmond;
+    background:rgba(146, 197, 211, 0.6) ;
+    margin:0 0;
+    font-family: 'Amatic SC', cursive;   
+    padding:5px 60px;
+    color:#474747;
+    padding:0 100%;
+
+}
+img {
+    width:100%;    
+}
+
+.nav {
+    list-style:none;
+    font-size:0;
+    margin:0 auto;
+    width:auto;
+    padding-left:0;
+    display: flex;
+    align-items: flex-end;
+    
+}
+.nav li {
+     display:inline-block;
+    font-size:25px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family: 'Amatic SC', cursive;
+    color: #474747;
+    background: whitesmoke;/*背景色*/
+    border-left: double 7px #4ec4d3;/*左線*/
+    border-right: double 7px #4ec4d3;/*右線*/
+}
+
+.nav li:hover {
+    background-color:rgb(146, 197, 211) ;
+    color:white;
+    font-family: 'Amatic SC', cursive;
+    border-left: double 7px white;/*左線*/
+    border-right: double 7px white;/*右線*/
+}
+ 
+.realheader {
+   grid-row: 2/3;
+   grid-column: 1;
+   display: flex;
+   position:sticky;
+   top:0px;
+   background-color: rgb(146, 197, 211);
+   z-index: 10;
+}
+
+information {
+    grid-row: 3/4;
+    grid-column: 1;
+    display:flex;
+}
+
+information div {
+    flex-grow: 1;
+    width:50%;   
+}
+
+.face {
+    position:relative;      
+}
+.star1 {
+    width:350px;
+    height:350px;
+    object-fit:cover;
+    border-radius:50%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 20px 20px 20px rgb(146, 197, 211);
+}
+.sentence {
+    text-align: center;
+}
+h1 {
+    margin-top: 25%;
+    font-family:'Amatic SC', cursive; 
+    color: #474747;
+}
+.hondai {
+    font-size:20px;
+    font-family: "Kokoro";
+}
+
+game {
+    grid-row: 4/5;
+    grid-column: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+game div {
+    vertical-align: center;
+}
+footer {
+    grid-row: 5/6;
+    grid-column: 1;
+    background-color: lightslategray;
+}
+
+.finalmenu {
+    text-align: center;
+}
+.finalmenu li {
+    display:inline-block;
+    font-size:25px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+}
+.unknown {
+    text-align: center;
+}
